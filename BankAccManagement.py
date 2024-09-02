@@ -54,8 +54,8 @@ class CheckingAccount(Account):
 
 
 # Example usage
-savings_account = SavingsAccount(account_number="SA123", holder_name="John Doe", balance=1000)
-checking_account = CheckingAccount(account_number="CA123", holder_name="Jane Doe", balance=500)
+savings_account = SavingsAccount(account_number="SA123", holder_name="AbdulAkram", balance=1000)
+checking_account = CheckingAccount(account_number="CA123", holder_name="AbdulAkram", balance=500)
 
 savings_account.deposit(500)
 savings_account.apply_interest()
