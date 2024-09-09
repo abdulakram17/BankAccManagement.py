@@ -1,5 +1,5 @@
 <h1>BankAccManagement.py</h1>
-Bank Account Simulation is a Python project that models a basic banking system, allowing users to perform essential operations such as deposits, withdrawals, and balance inquiries.<br>The simulation uses Object-Oriented Programming (OOP) principles to create a realistic and flexible framework for managing different types of accounts.
+<b>Bank Account Simulation is a Python project that models a basic banking system, allowing users to perform essential operations such as deposits, withdrawals, and balance inquiries.<br>The simulation uses Object-Oriented Programming (OOP) principles to create a realistic and flexible framework for managing different types of accounts.</b>
 <b></b>Key Features</b>
 <h2>Object-Oriented Design</h2>: The project utilizes Python’s OOP capabilities to create a modular and reusable code structure.<br> It features a base Account class and two specialized subclasses: SavingsAccount and CheckingAccount.
 <h2>Encapsulation:</h2> Sensitive data, such as account balances, is protected using encapsulation techniques to prevent unauthorized access and modification.
