@@ -80,22 +80,23 @@ public class Main {
         int choice;
 
         do {
-            System.out.println("1. Create Account\n2. Deposit\n3. Withdraw\n4. Display Accounts\n5. Exit");
+            System.out.println("\n1. Create Account\n2. Deposit\n3. Withdraw\n4. Display Accounts\n5. Exit");
+            System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
-                    System.out.println("Enter name:");
+                    System.out.print("Enter name: ");
                     String name = scanner.next();
                     bank.createAccount(name);
                     break;
 
                 case 2:
-                    System.out.println("Enter account number:");
+                    System.out.print("Enter account number: ");
                     int accNumber = scanner.nextInt();
                     Account account = bank.searchAccount(accNumber);
                     if (account != null) {
-                        System.out.println("Enter amount to deposit:");
+                        System.out.print("Enter amount to deposit: ");
                         double amount = scanner.nextDouble();
                         account.deposit(amount);
                     } else {
@@ -104,11 +105,11 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("Enter account number:");
+                    System.out.print("Enter account number: ");
                     accNumber = scanner.nextInt();
                     account = bank.searchAccount(accNumber);
                     if (account != null) {
-                        System.out.println("Enter amount to withdraw:");
+                        System.out.print("Enter amount to withdraw: ");
                         double amount = scanner.nextDouble();
                         account.withdraw(amount);
                     } else {
@@ -124,3 +125,11 @@ public class Main {
                     System.out.println("Exiting...");
                     break;
 
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        } while (choice != 5);
+
+        scanner.close();
+    }
+}
